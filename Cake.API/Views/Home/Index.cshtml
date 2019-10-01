@@ -1,0 +1,11 @@
+﻿@model  DessertShop.API.ViewModels.HomeViewModel
+
+<h2>@Model.Title</h2>
+
+@foreach (var dessert in Model.Desserts)
+{
+    <div>
+        <h2>@dessert.Name</h2>
+        <h3>@dessert.Price.ToString("c")</h3>
+    </div>
+}
